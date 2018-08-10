@@ -46,6 +46,7 @@ fn main() {
 
     let output = Command::new("cargo")
         .arg("test")
+        .arg("--all")
         .output()
         .expect("failed to execute command");
 
